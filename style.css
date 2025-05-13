@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.medsos{
+    padding: 5px 0;
+    background-color: #DC0B0B;
+}
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+}
+.container{
+    width: 89%;
+    margin: 0 auto;
+}
+header{
+}
+header h1{
+    float: left;
+    padding: 15px 0;
+    color: #DC0B0B;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover{
+    background-color: #DC0B0B;
+    color: #fff;
+}
+.active{
+    background-color: #DC0B0B;
+    color: #fff;
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+} 
+.banner :after{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 78, 61, .6);
+}
+.banner h2{
+   color: #fff;
+   z-index: 1;
+   padding: 20px 25px;
+   border: 3px solid #fff;
+}
+section{
+    padding: 50px 0;
+}
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color:  #DC0B0B;
+}
+.about p{
+    color: #777;
+}
+footer{
+    padding: 30px 0;
+    background-color: #bd1c0b;
+    color: #060302;
+    text-align: center;
+}
+.services{
+    background-color: #f9f9f9;
+    
+}
+.box{
+    border: 1px solid;
+    color: #bd1c0b;
+}
+.box .col-4{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    float: left;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.box .col-4 h4{
+    margin: 20px 0;
+}
