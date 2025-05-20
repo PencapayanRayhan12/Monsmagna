@@ -1,33 +1,109 @@
-body {
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+  }
+  
+  body {
     background-color: #f4f0ec;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .medsos {
+    padding: 5px 0;
+    background-color: #DC0B0B;
+  }
+  
+  .medsos ul li {
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .container {
+    width: 89%;
+    margin: 0 auto;
+  }
+  
+  header {
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #DC0B0B;
+  }
+  
+  header ul {
+    float: right;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+  header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+  }
+  
+  header ul li a:hover {
+    background-color: #DC0B0B;
+    color: #fff;
   }
   
   .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
   }
   
   .contact-left {
-    flex: 1;
-    min-width: 300px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f4f0ec;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .contact-left img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-image: url('../contact.jpge');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .contact-right {
-    flex: 1;
-    padding: 60px 40px;
+    width: 50%;
+    padding: 60px;
     background-color: #f9f7f3;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 500px;
   }
   
   .contact-right h2 {
@@ -90,20 +166,32 @@ body {
   .social-icons a:hover {
     color: red;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .contact-container {
       flex-direction: column;
     }
-  
+    
     .contact-left,
     .contact-right {
       width: 100%;
+      padding: 30px;
     }
-  
+    
+    .contact-left {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    
+    .contact-left img {
+      max-height: 300px;
+    }
+    
     .contact-right {
-      padding: 40px 20px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    
+    .form-container {
+      max-width: 100%;
     }
   }
-  
