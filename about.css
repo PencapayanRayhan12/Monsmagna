@@ -1,45 +1,154 @@
-/* ABOUT SECTION */
-.about-mitra {
-  background-image: url('../img/bg.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
-}
-
-.about-mitra .overlay {
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 800px;
-  width: 100%;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.about-content h2 {
-  font-size: 36px;
-  color: #ff4d4d; 
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about-content p {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  color: #f8f8f8;
-}
-
-.about-content .copyright {
-  margin-top: 30px;
-  color: #f0c0c0;
-  font-size: 14px;
-}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .medsos{
+    padding: 5px 0;
+    background-color: #DC0B0B;
+  }
+  .medsos ul li{
+    display: inline-block;
+    color: #fff;
+  }
+  .container{
+    width: 89%;
+    margin: 0 auto;
+  }
+  header h1{
+    float: left;
+    padding: 15px 0;
+    color: #DC0B0B;
+  }
+  header ul{
+    float: right;
+  }
+  header ul li{
+    display: inline-block;
+  }
+  header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+  }
+  header ul li a:hover{
+    background-color: #DC0B0B;
+    color: #fff;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .active{
+    background-color: #DC0B0B;
+    color: #fff;
+  }
+  .banner {
+    background-color: rgba(242, 78, 61, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-image: url(../img/about.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 73vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+  }
+  
+  .banner :after{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 78, 61, .6);
+    z-index: -1;
+  }
+  
+  .banner h2 {
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    text-transform: uppercase;
+  }
+  .about-section {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+  
+  .about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .about-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .about-section p {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+  section{
+    padding: 50px 0;
+  }
+  section h3{
+    text-align: center;
+    padding: 20px 0;
+    color:  #DC0B0B;
+  }
+  footer {
+    background-color: #bd1c0b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 20px;
+  }
+  .services{
+    background-color: #f9f9f9;
+    
+  }
+  .box{
+    border: 1px solid;
+    color: #bd1c0b;
+  }
+  .box .col-4{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    float: left;
+  }
+  .icon{
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .box .col-4 h4{
+    margin: 20px 0;
+  }
